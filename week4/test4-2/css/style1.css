@@ -1,0 +1,128 @@
+
+
+@media(min-width:480px) {
+    /*页面left样式设置*/
+    .box-left {
+        height: 662PX;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #3f2d2d;
+        float: left;
+    }
+    .box-left-up {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        background-color: #6a4d4d;
+    }
+    .box-left-up p {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        position: relative;
+        top: 25px;
+    }
+    .box-left-down div {
+        height: 30px;
+        width: 180px;
+        background-color:  #db6a6a;
+        margin-top: 25px;
+        position: relative;
+        margin-left: 20px;
+    }
+    .box-left-down a{
+    	font-size: 14px;
+    }
+  /*  二级菜单设置*/
+.box-left-down .menu{
+    height: 80px;
+    width: 180px;
+    background-color: #a45c5c;
+    position: relative;
+    top: -22px;
+    left: -32px;
+    z-index: 1;
+}
+.box-left-down .menu1{
+    height: 30px; 
+    width: 150px;
+    background-color: #31708f;
+    position: relative;
+    top: 7px;
+    float: left;  
+    margin-top: 5px;
+    left: -5px;
+}
+.box-left-down .menu{
+	display: none;
+}
+.box-left-down :hover div{
+	display:block; 
+}
+    /*页面right样式设置*/
+    .box-right {
+       height: 662PX;
+    width: 87%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 173px;
+    background: url(../images/s1.jpg) no-repeat 0px 0px;
+    }
+    .col-md-2 img {
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    .col-md-2 p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .row {
+        margin-bottom: 20px;
+    }
+    .row .row {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    [class*="col-"] {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #eee;
+        background-color: rgba(86, 61, 124, .15);
+        border: 1px solid #ddd;
+        border: 1px solid rgba(86, 61, 124, .2)
+    }
+    .col-md-2 {
+        margin-left: 40px;
+        margin-top: 30px;
+
+    }
+}
+@media(max-width:479px) {
+	.box .box-left{
+		display: none;
+	}
+}
+ /*我的样式*/
+
+   /* .container div{
+        float: left;
+        
+    }*/
+    .mycss1{
+        position: relative;
+        left: -112px;
+        height: 650px;
+        
+        
+    }
+    .mycss2{
+        position: relative;
+        left: 112px;
+    top: -32px;
+        height: 650px;
+    }

@@ -1,0 +1,319 @@
+.lessiontitle {
+    font-size: 15px;
+}
+*{
+	margin: 0;
+	padding:0;
+}
+.box{
+	min-width:1350px; 
+    min-height: 600px;
+    height: 100%;
+    position: relative;
+}
+/*顶部样式设置*/
+header{
+	height: 60px;
+}
+.wrap{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.wrap .heada{
+	float: left;
+	height: 60px;	
+}
+.heada{
+	padding-top: 10px;
+}
+ul{
+	float: left;
+	padding:0;
+	margin: 0;
+	list-style: none;
+	margin-left: 20px;
+	height: 60px;
+	line-height: 60px;
+}
+.wrap ul li{
+	float: left;
+	margin-left: 50px;
+}
+.boult1{
+	width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    display: inline-block;
+    transform: rotate(-135deg);
+    /*-webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);*/
+    transform-origin: 4px 4px;
+    transition: transform 0.5s linear;
+}
+.headb li i{
+	margin-left: 5px;
+}
+.headb li a{
+	color: green;
+	text-decoration: none;
+	font-size: 12px;
+}
+.headb span{
+	color: black;
+	
+}
+.headb span:hover{
+	color: green;
+	text-decoration: none;
+	
+}
+
+.headb .zhuan:hover i{
+	border-color: green;
+	transform: rotate(403deg);
+}
+/*二级菜单样式设置*/
+.headb .menu2{
+    position: absolute;
+    width: 260px;
+    left: 355px;
+    top: 60px;
+    height: 231px;
+    background-color: white;
+    z-index: 1;
+}
+.headb .menu3{
+    position: absolute;
+    width: 260px;
+    left: 460px;
+    top: 60px;
+    height: 231px;
+    background-color: white;
+    z-index: 1;
+}
+.headb .menu4{
+    position: absolute;
+    width: 260px;
+    left: 570px;
+    top: 60px;
+    height:150px;
+    background-color: white;
+    z-index:2;
+}
+.headb .menu2 li{
+	width: 140px;
+    height: 24px;
+    position: relative;
+    top: -20px;
+    left: -33px;
+    margin-top: 9px;
+}
+.headb .menu3 li{
+	width: 140px;
+    height: 25px;
+    position: relative;
+    top: -20px;
+    left: -25px;
+    margin-top: 12px;
+}
+.headb .menu4 li{
+	width: 140px;
+    height: 25px;
+    position: relative;
+    top: -20px;
+    left: -25px;
+    margin-top: 12px;
+}
+.headb .menu2 .first{
+	float: left;
+}
+.headb .menu2 .photo1 img{
+	float: left;
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    left: 2%;
+    top: 100%;
+}
+.headb .menu3 .photo2 img{
+	float: left;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 2%;
+    top: 80%;
+}
+.headb .menu4 .photo3 img{
+	float: left;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 2%;
+    top: 80%;
+}
+.headb .menu3 span{
+    float: right;
+    position: absolute;
+    right: -80px;
+    font-size: 12px;
+}
+
+.headb .menu4 span{
+    float: right;
+    position: absolute;
+    right: -80px;
+    font-size: 12px;
+}
+/*设置二级菜单默认隐藏*/
+.headb li ul{
+	display: none;
+}
+.headb li:hover .menu2{
+	display: block;
+}
+.headb li:hover .menu3{
+	display: block;
+}
+.headb li:hover .menu4{
+	display: block;
+}
+.headb .menu2 a{
+	float: left;
+    margin-left: 32px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.headb .menu3 a{
+	float: left;
+    margin-left: 32px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.headb .menu4 a{
+	float: left;
+    margin-left: 32px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.headb .menu2 .con1{
+	height:20px;
+}
+.headb .menu2 a:hover {
+	color: green;
+}
+.headb .menu3 a:hover {
+	color: green;
+}
+.headb .menu4 a:hover {
+	color: green;
+}
+.headc{
+	float: right;
+}
+.headc div{
+	float: left;
+	height: 65px;
+	line-height: 60px;
+	margin-left: 20px;
+}
+.headc img{
+	float: left;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 25px;
+    margin-left: 10px;
+}
+.headc .headc1:hover{
+	background: url("../img/search-icon2.png") 0 0 no-repeat;
+    background-size: 16px 16px;
+    background-position: 10px, 0;
+}
+.headc .headc2:hover{
+	background: url("../img/app-icon2.png") 0 0 no-repeat;
+    background-size: 16px 16px;
+    background-position: 10px, 0;
+}
+.headc .headc2-1{
+	position: absolute;
+    width: 105px;
+    left: 989px;
+    top: 60px;
+    height: 145px;
+    z-index: 1000;
+    float: right;
+}
+.headc .headc3-1{
+	position: absolute;
+    width: 105px;
+    left: 1040px;
+    top: 60px;
+    height: 145px;
+    z-index: 1000;
+    float: right;
+}
+.headc .headc2-1 img{
+    float: left;
+    width: 105px;
+    height: 145px;
+    position: relative;
+    left: 40px;
+    top: 0px;
+}
+.headc .headc2-1{
+	display: none;
+}
+.headc :hover .headc2-1{
+	display: block;
+}
+.headc .headc3-2{
+	background-color:white;
+    width: 105px;
+    height: 28px;
+    margin-left: 0px;
+    float: left;
+}
+.headc .headc3-2:hover{
+	background-color:#eae5e5;
+}
+
+.headc .headc3-2  a{
+	float: left;
+    margin-left: 31px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: -25px;
+    top: -81px;
+}
+.headc .headc3-2 .he1{
+	 float: left;
+    margin-left: -15px;
+    position: relative;
+    top: 66px;
+    left: 25px;
+}
+.headc .headc3-2  a:hover{
+	color: green;
+}
+.headc .headc3-2 img{
+	    float: left;
+    width: 14px;
+    height: 15px;
+    position: relative;
+    left: -100%;
+    top: 10%;
+}
+.headc .headc3-1{
+	display: none;
+}
+.headc :hover .headc3-1{
+	display: block;
+}

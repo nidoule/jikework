@@ -1,0 +1,162 @@
+/* one面设置 */
+
+#box .one {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+}
+#box .one .li div {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .one .li {
+    float: left;
+}
+
+/* two面设置 */
+#box .two {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+}
+
+#box .two .li div {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .two .li {
+    float: left;
+}
+
+/* three面设置 */
+#box .three {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    background-color: #9B3B3B;
+}
+#box .three .li div {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .three .li {
+    float: left;
+}
+
+/* four面设置 */
+
+#box .four {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+}
+
+#box .four .li div {
+    width: 50px;
+    height: 50px;
+    background: #00AFFF;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .four .li {
+    float: left;
+}
+
+/* five面设置 */
+#box .five {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+}
+#box .five .li div {
+    width: 50px;
+    height: 50px;
+    background: #00FFDE;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .five .li {
+    float: left;
+}
+
+/* six面设置 */
+#box .six {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+}
+#box .six .li div {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#box .six .li {
+    float: left;
+}
+
+
+/* 3D效果，旋转 */
+
+#box {
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transform-style: preserve-3d;
+    transform-origin: 80px 80px 0;
+}
+
+#box .one {
+    transform: translateZ(78px);
+}
+
+#box .two {
+    transform: rotateX(-90deg) translateZ(78px);
+}
+
+#box .three {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(78px);
+}
+
+#box .four {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(78px);
+}
+
+#box .five {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(78px);
+}
+
+#box .six {
+    transform: rotateY(90deg) translateZ(78px);
+}
+
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(255deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(135deg) rotateZ(135deg);
+    }
+    83% {
+        -webkit-transform: rotateX(135deg);
+    }
+}
