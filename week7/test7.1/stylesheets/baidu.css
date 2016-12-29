@@ -1,0 +1,711 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container {
+    display: block;
+    min-width: 810px;
+    min-height: 600px;
+}
+
+.container div {
+    float: left;
+}
+
+.navRight {
+    position: relative;
+    left: 585px;
+    top: -20px
+}
+
+.zong {
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    /* 去li的样式 */
+}
+
+
+/*设置一级li的样式*/
+
+.dingbu1 {
+    height: 20px;
+}
+
+.dingbu1 li {
+    float: right;
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    right: 20px;
+}
+
+.dingbu1 li a {
+    color: black;
+}
+
+.dingbu1 li a:hover {
+    color: blue;
+}
+
+
+/*设置二级菜单默认隐藏*/
+
+.dingbu1 li ul {
+    display: none;
+}
+
+
+/*设置二级菜单的样式和位置*/
+
+
+/* 对设置样式 */
+
+.dingbu2 {
+    position: absolute;
+    border: 1px solid #DDD;
+    box-shadow: 0 0 8px #DDD;
+    top: 15px;
+    height: 120px;
+    left: -20px;
+}
+
+.dingbu2 li {
+    width: 67px;
+    margin: 0px;
+    height: 30px;
+    left: 0px;
+    top: 10px;
+}
+
+.dingbu2 li a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.dingbu2 li a:hover {
+    background-color: #3385ff;
+}
+
+.left3item div {
+    margin: 3px;
+}
+
+.huanfu {
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    left: -140px;
+    top: 25px;
+}
+
+.huanfu1 .huanfu {
+    display: none;
+}
+
+.left3item .huanfu1:hover .huanfu {
+    display: block;
+}
+
+.huanfu input {
+    width: 65px;
+    height: 20px;
+}
+
+#input11 {
+    background: pink;
+}
+
+#input12 {
+    background: #ff0000;
+}
+
+#input13 {
+    background: #0000ff;
+}
+
+#input14 {
+    background: #ff00ff;
+}
+
+
+/* 对更多菜单样式设置 */
+
+.dingbu3 {
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    height: 20px;
+}
+
+.dingbu3 li {
+    width: 80px;
+    background-color: #F7F4F4;
+    margin: 0px;
+    height: 72px;
+    left: 2px;
+}
+
+.li7,
+.li8,
+.gao0,
+.dingbu3 li a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+}
+
+.gao8 {
+    text-decoration: none;
+    background-color: #3385ff;
+}
+
+.dingbu3 li a:hover {
+    background-color: #3385ff;
+}
+
+
+/* 图片 */
+
+.dingbu1 .gao1 {
+    background-image: url("../image/music.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dingbu1 .gao2 {
+    background-image: url("../image/picture.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dingbu1 .gao3 {
+    background-image: url("../image/question.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dingbu1 .gao4 {
+    background-image: url("../image/book.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dingbu1 .gao5 {
+    background-image: url("../image/wind.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dingbu1 .gao6 {
+    background-image: url("../imgge/earth.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+/*设置鼠标滑过的时候显示二级菜单*/
+
+.dingbu1>li:nth-child(1):hover #first {
+    display: block;
+}
+
+.dingbu1>li:nth-child(2):hover #second {
+    display: block;
+}
+
+
+/*中间部分*/
+
+article {
+    width: 100%;
+    padding-top: 0px;
+    text-align: center;
+}
+
+article img {
+    width: 270px;
+    height: 129px;
+    position: relative;
+    left: -20px;
+}
+
+form {
+    margin: 25px auto;
+    width: 700px;
+    position: relative;
+}
+
+.text {
+    border: 1px solid #DDD;
+    width: 500px;
+    height: 34px;
+    *height: 25px;
+    outline: none;
+    padding-left: 10px;
+    *padding-top: 10px
+}
+
+@media \0screen {
+    .text {
+        height: 25px;
+        padding-top: 10.5px;
+    }
+}
+
+.text:hover {
+    border: 1px solid #999;
+}
+
+.text:focus {
+    border: 1px solid #07ccee;
+}
+
+.sub {
+    width: 100px;
+    height: 38px;
+    background-color: #3385ff;
+    color: #fff;
+    border: 0;
+    margin-left: -37px;
+}
+
+.sub:hover {
+    background-color: #0000FF;
+    cursor: pointer;
+}
+
+.camera {
+    position: absolute;
+    top: 10px;
+    right: 170px;
+    *right: 200px;
+}
+
+@media \0screen {
+    .camera {
+        right: 200px;
+    }
+}
+
+.camera a img {
+    width: 20px;
+    height: 20px;
+    border: 0 \9;
+    position: relative;
+    left: 20px;
+}
+
+#nav,
+#nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#nav ul {
+    display: none;
+}
+
+#nav ul img {
+    *margin-top: -30px;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav li:hover .camera-1 {
+    display: none;
+}
+
+div.top {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a.one,
+a.two,
+a.three,
+a.four,
+a.five,
+a.six,
+a.seven,
+a.eight {
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    display: inline;
+    margin: 23px 8px;
+}
+
+a.one:hover,
+a.two:hover,
+a.three:hover,
+a.four:hover,
+a.five:hover,
+a.six:hover,
+a.seven:hover {
+    color: blue;
+}
+
+a.six,
+a.seven,
+a.eight {
+    font-weight: normal;
+}
+
+a.eight {
+    color: white;
+    background-color: #38f;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #38f;
+    line-height: 24px;
+}
+
+div.middle {
+    text-align: center;
+    width: 641px;
+    margin: 0 auto;
+    padding: 0px 0px 280px 0px;
+}
+
+img {
+    padding-bottom: 36px;
+}
+
+input.text {
+    width: 526px;
+    height: 13px;
+    padding: 10px 5px;
+    float: left;
+    line-height: 33px;
+    margin-left: 25px;
+}
+
+input.btn {
+    width: 100px;
+    height: 37px;
+    line-height: 37px;
+    background: #317ef3;
+    border-bottom: 1px solid #2d78f4;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+}
+
+input.btn:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+div.bottom {
+    text-align: center;
+    margin-left: 270px;
+}
+
+#pid1 {
+    font: 12px arial;
+    color: #00c;
+}
+
+a.nine {
+    color: #00c;
+}
+
+a.ten {
+    color: #666;
+}
+
+#pid2 {
+    font: 12px arial;
+    color: #666;
+}
+
+div.middle2 {
+    width: 900px;
+    margin: -210px auto 50px;
+}
+
+div.middle2 ul li span {
+    display: block;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.weather {
+    position: relative;
+    float: left;
+    top: 0px;
+    font-size: 13px;
+    width: 210px;
+    height: 34px;
+}
+
+.left3item {
+    position: relative;
+    display: inline-block;
+    float: left;
+    line-height: 34px;
+    color: black;
+    margin-left: -15px;
+}
+
+.weather_city {
+    margin-left: 15px;
+    line-height: 34px;
+    color: #333;
+}
+
+.weather_state {
+    color: #38f;
+}
+
+.weather_exp {
+    color: #38f;
+}
+
+#tabs-1 p.two,
+p.four {
+    text-align: center;
+}
+
+#tabs-1 p.two span,
+p.four span {
+    color: blue;
+}
+
+#tabs-2 img:hover {
+    border: solid 1px red;
+}
+
+#tabs-2 img {
+    padding: 8px 11px;
+}
+
+#tabs-3 div.one {
+    width: 538px;
+}
+
+#tabs-3 .one img.two {
+    position: relative;
+    right: -7px;
+}
+
+#tabs-3 .one img.three {
+    position: relative;
+    right: -15px;
+}
+
+#tabs-3 .one img.four {
+    position: relative;
+    right: -30px;
+}
+
+#tabs-3 div.two {
+    width: 300px;
+    position: relative;
+    left: 560px;
+    top: -269px;
+}
+
+#tabs-3 div.two a {
+    text-decoration: none;
+}
+
+#tabs-3 div.two a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#div11 img {
+    margin-left: 8px;
+}
+
+#div13 img {
+    margin-left: 8px;
+}
+
+#div12 span {
+    width: 200px;
+    margin-left: 8px;
+    color: red;
+}
+
+#div12 a {
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+#div14 span {
+    width: 200px;
+    margin-left: 8px;
+    color: red;
+}
+
+#div14 a {
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+#div15 td {
+    border: solid 1px gray;
+    width: 273px;
+    text-align: center;
+}
+
+#div15 {
+    margin-top: 20px;
+}
+
+#div15 td p a {
+    text-decoration: none;
+}
+
+#div15 td p span.one {
+    color: red;
+}
+
+#div15 td p span.two {
+    text-decoration: line-through;
+}
+
+#tabs-5 div span p {
+    margin-top: -23px;
+}
+
+#tabs-5 div span img.one {
+    margin-top: 16px;
+}
+
+#tabs-5 div span.two {
+    position: relative;
+    left: 200px;
+    top: -356px;
+}
+
+#tabs-5 div span.three {
+    position: relative;
+    left: 400px;
+    top: -713px;
+}
+
+#tabs-5 div span.four {
+    position: relative;
+    left: 610px;
+    top: -860px;
+}
+
+#tabs-5 div span.five {
+    position: relative;
+    left: 400px;
+    top: -866px;
+}
+
+#tabs-5 div span.six {
+    position: relative;
+    left: 610px;
+    top: -1010px;
+}
+
+#tabs-5 p:hover,
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*百度首行右边栏的css*/
+
+div#slide,
+div#slide2 {
+    display: none;
+    width: 70px;
+    height: 135px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px gray;
+}
+
+div#slide {
+    position: absolute;
+    left: 1150px;
+}
+
+div#slide2 {
+    height: 110px;
+    position: absolute;
+    left: 1200px;
+}
+
+div#slide p,
+div#slide2 p {
+    font-size: 5px;
+    text-align: center;
+}
+
+div#slide p:hover,
+div#slide2 p:hover {
+    background: blue;
+}
+
+div#slide3 {
+    display: none;
+    width: 90px;
+    height: 610px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px gray;
+    text-align: center;
+}
+
+div#slide3 p {
+    font-size: 5px;
+    margin-top: -20px;
+}
+
+div#slide3 a {
+    margin-top: 15px;
+}
+
+div#slide3 {
+    position: absolute;
+    right: -1216px;
+}
+
+#tabs-1 p.two,
+p.four {
+    display: none;
+}
+
+footer {
+    margin-top: 250px;
+    margin-left: 220px;
+}
